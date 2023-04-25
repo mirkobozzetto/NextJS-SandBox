@@ -35,10 +35,47 @@ export const Typography = ({
 
   switch (variant) {
     case "display":
-      variantStyles = "text-red-500";
+      variantStyles = "text-8xl";
       break;
     case "h1":
-      variantStyles = "text-green-500";
+      variantStyles = "text-7xl";
+      break;
+    case "h2":
+      variantStyles = "text-6xl";
+      break;
+    case "h3": // Default
+      variantStyles = "text-5xl";
+      break;
+    case "h4":
+      variantStyles = "text-4xl";
+      break;
+
+    case "h5":
+      variantStyles = "text-3xl";
+      break;
+    case "lead":
+      variantStyles = "text-2xl";
+      break;
+    case "body-lg":
+      variantStyles = "text-lg";
+      break;
+    case "body-base":
+      variantStyles = "text-base";
+      break;
+    case "body-sm":
+      variantStyles = "text-sm";
+      break;
+    case "caption1":
+      variantStyles = "text-caption1";
+      break;
+    case "caption2":
+      variantStyles = "text-caption2";
+      break;
+    case "caption3":
+      variantStyles = "text-caption3";
+      break;
+    case "caption4":
+      variantStyles = "text-caption4";
       break;
   }
   return (
@@ -46,7 +83,8 @@ export const Typography = ({
       className={clsx(
         variantStyles,
         weight === "medium" && "font-medium",
-        className
+        className,
+        "text-8xl"
       )}
     >
       {" "}
