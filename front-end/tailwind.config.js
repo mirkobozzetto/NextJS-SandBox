@@ -2,6 +2,32 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    colors: {
+      white: "#ffffffff",
+      primary: {
+        200: "#efeffc",
+        300: "#cfd0f6",
+        400: "#7f81e8",
+        DEFAULT: "#5f62e2",
+        600: "#5658cb",
+      },
+      secondary: {
+        200: "#eaf8f4",
+        300: "#bfe9de",
+        400: "#56c4a7",
+        DEFAULT: "#2ab691",
+        600: "#26a482",
+      },
+      gray: {
+        400: "#f2f2f2",
+        500: "#e5e5e5",
+        600: "#b2b2b2",
+        700: "#808080",
+        800: "#333333",
+        DEFAULT: "#1d1d1d",
+      },
+    },
+
     fontSize: {
       "8xl": [
         "120px",
