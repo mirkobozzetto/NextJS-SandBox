@@ -13,9 +13,35 @@ export default function Home() {
 
       <div className="flex justify-center gap-4 p-10 ">
         <Button>Accent</Button>
+        <Button size="small" variant="secondary">
+          Secondary
+        </Button>
+        <Button size="small" variant="outline">
+          outline
+        </Button>
+        <Button size="small" variant="disabled" disabled>
+          dissabled
+        </Button>
+      </div>
+
+      <div className="flex justify-center gap-4 p-10 ">
+        <Button>Accent</Button>
         <Button variant="secondary">Secondary</Button>
         <Button variant="outline">outline</Button>
         <Button variant="disabled" disabled>
+          dissabled
+        </Button>
+      </div>
+
+      <div className="flex justify-center gap-4 p-10 ">
+        <Button>Accent</Button>
+        <Button size="large" variant="secondary">
+          Secondary
+        </Button>
+        <Button size="large" variant="outline">
+          outline
+        </Button>
+        <Button size="large" variant="disabled" disabled>
           dissabled
         </Button>
       </div>

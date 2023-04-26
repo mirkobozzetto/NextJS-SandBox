@@ -48,13 +48,13 @@ export const Button = ({
 
   switch (size) {
     case "small":
-      sizeStyles = "";
+      sizeStyles = "text-caption3 font-medium px-[14px] py-[12px]";
       break;
-    case "medium":
-      sizeStyles = "";
+    case "medium": // Default
+      sizeStyles = "text-caption2 font-medium px-[18px] py-[15px]";
       break;
     case "large":
-      sizeStyles = "";
+      sizeStyles = "text-caption1 font-medium px-[22px] py-[18px]";
       break;
   }
 
@@ -62,7 +62,7 @@ export const Button = ({
     <>
       <button
         type="button"
-        className={clsx(variantStyles, icoSize, "")}
+        className={clsx(variantStyles, sizeStyles, icoSize, "")}
         onClick={() => console.log("click")}
         disabled={disabled}
       >
