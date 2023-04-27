@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Seo } from "@/ui/component/Seo";
 import { Typography } from "@/ui/design-system/typography/Typography";
 import { Button } from "@/ui/design-system/button/Button";
+import { RiUser6Fill } from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
       />
 
       <div className="flex justify-center gap-4 p-10 ">
-        <Button>Accent</Button>
-        <Button size="small" variant="secondary">
+        <Button size="small" icon={{ icon: RiUser6Fill }} iconPosition="left">
+          Accent
+        </Button>
+        <Button size="small" icon={{ icon: RiUser6Fill }} variant="secondary">
           Secondary
         </Button>
         <Button size="small" variant="outline">
@@ -22,6 +25,7 @@ export default function Home() {
         <Button size="small" variant="disabled" disabled>
           dissabled
         </Button>
+        <Button size="small" variant="ico" icon={{ icon: RiUser6Fill }} />
       </div>
 
       <div className="flex justify-center gap-4 p-10 ">
@@ -31,6 +35,7 @@ export default function Home() {
         <Button variant="disabled" disabled>
           dissabled
         </Button>
+        <Button variant="ico" icon={{ icon: RiUser6Fill }} />
       </div>
 
       <div className="flex justify-center gap-4 p-10 ">
@@ -39,14 +44,31 @@ export default function Home() {
           Secondary
         </Button>
         <Button size="large" variant="outline">
-          outline
+          Accent
         </Button>
         <Button size="large" variant="disabled" disabled>
-          dissabled
+          Accent
         </Button>
+        <Button
+          size="large"
+          variant="ico"
+          icon={{ icon: RiUser6Fill }}
+          iconTheme="accent"
+        />
+        <Button
+          size="large"
+          variant="ico"
+          icon={{ icon: RiUser6Fill }}
+          iconTheme="secondary"
+        />
+        <Button
+          size="large"
+          variant="ico"
+          icon={{ icon: RiUser6Fill }}
+          iconTheme="gray"
+        />
       </div>
 
-      {/* 777 - Jackpot Man - 777 */}
       {/* <div className="space-y-5">
         <Typography theme="primary" variant="h1" component="div">
           Hello World

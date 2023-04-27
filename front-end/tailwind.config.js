@@ -27,7 +27,6 @@ module.exports = {
         DEFAULT: "#1d1d1d",
       },
     },
-
     fontSize: {
       "8xl": [
         "120px",
@@ -149,6 +148,10 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+    },
+    borderRadius: {
+      DEFAULT: "10px",
+      full: "9999px",
     },
     extend: {},
   },
