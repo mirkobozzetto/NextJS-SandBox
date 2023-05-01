@@ -20,19 +20,37 @@ export default function Home() {
       </div>
 
       <div className="flex items-center gap-4 p-10 ">
-        <Button size="small" icon={{ icon: RiUser6Fill }} iconPosition="left">
+        <Button isLoading size="small">
           Accent
         </Button>
-        <Button size="small" icon={{ icon: RiUser6Fill }} variant="secondary">
+        <Button
+          isLoading
+          size="small"
+          icon={{ icon: RiUser6Fill }}
+          iconPosition="left"
+        >
+          Accent
+        </Button>
+        <Button
+          isLoading
+          size="small"
+          icon={{ icon: RiUser6Fill }}
+          variant="secondary"
+        >
           Secondary
         </Button>
-        <Button size="small" variant="outline">
+        <Button isLoading size="small" variant="outline">
           outline
         </Button>
-        <Button size="small" variant="disabled" disabled>
+        <Button isLoading size="small" variant="disabled" disabled>
           dissabled
         </Button>
-        <Button size="small" variant="ico" icon={{ icon: RiUser6Fill }} />
+        <Button
+          isLoading
+          size="small"
+          variant="ico"
+          icon={{ icon: RiUser6Fill }}
+        />
       </div>
 
       <div className="flex items-center gap-4 p-10 ">

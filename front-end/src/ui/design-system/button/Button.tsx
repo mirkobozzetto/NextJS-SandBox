@@ -102,7 +102,11 @@ export const Button = ({
       >
         {isLoading && (
           <div className="absolute inset-0 flex items-center justify-center">
-            <Spinner size="small" />"
+            {variant === "accent" || variant === "ico" ? (
+              <Spinner size="small" variant="white" />
+            ) : (
+              <Spinner size="small" />
+            )}
           </div>
         )}
 
