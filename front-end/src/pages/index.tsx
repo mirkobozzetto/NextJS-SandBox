@@ -8,13 +8,15 @@ import { Spinner } from "@/ui/design-system/spinner/Spinner";
 import { Typography } from "@/ui/design-system/typography/Typography";
 
 import { RiShieldUserLine, RiNotification2Fill } from "react-icons/ri";
+import { Navigation } from "@/ui/component/navigation/Navigation";
 
 export default function DesignSystem() {
   return (
     <>
       <Seo title="Coders Monkeys" description="description" />
       {/* <Layout> */}
-      <Container className="py-10 space-y-20">
+      <Navigation />
+      <Container className="py-10 space-y-10">
         {/* Typography */}
         <div className="space-y-2">
           <Typography variant="caption2" weight="medium">

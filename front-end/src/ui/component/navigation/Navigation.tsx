@@ -10,10 +10,10 @@ interface Props {
 export const Navigation = ({}: Props) => {
   return (
     <div className="border-b-2 border-gray-400">
-      <Container className="">
-        <div>
+      <Container className="flex items-center justify-between py-1.5">
+        <div className="flex items-center gap-2.5">
           <Logo size="small" />
-          <div className="">
+          <div className="flex flex-col">
             <div className="text-gray font-extrabold text-[24px]">
               Coders Monkeys
             </div>
@@ -22,7 +22,17 @@ export const Navigation = ({}: Props) => {
             </Typography>
           </div>
         </div>
-        <div></div>
+        <div className="flex items-center gap-7">
+          <Typography variant="caption3" component="div" className="">
+            Projets
+          </Typography>
+          <Typography variant="caption3" component="div" className="">
+            Projets
+          </Typography>
+          <Typography variant="caption3" component="div" className="">
+            Projets
+          </Typography>
+        </div>
       </Container>
     </div>
   );
