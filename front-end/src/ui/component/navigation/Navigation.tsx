@@ -1,7 +1,10 @@
 import { Container } from "@/ui/component/container/Container";
-
 import { Logo } from "@/ui/design-system/logo/Logo";
 import { Typography } from "@/ui/design-system/typography/Typography";
+import { Button } from "@/ui/design-system/button/Button";
+
+import { ActiveLink } from "@/ui/component/navigation/Active-link";
+// import Link from "next/link";
 
 interface Props {
   // children: React.ReactNode;
@@ -24,14 +27,18 @@ export const Navigation = ({}: Props) => {
         </div>
         <div className="flex items-center gap-7">
           <Typography variant="caption3" component="div" className="">
-            Projets
+            <ActiveLink href="/design-system">Design System</ActiveLink>
           </Typography>
           <Typography variant="caption3" component="div" className="">
-            Projets
+            <ActiveLink href="/projets">Projets</ActiveLink>
           </Typography>
           <Typography variant="caption3" component="div" className="">
-            Projets
+            <ActiveLink href="/formations">Formations</ActiveLink>
           </Typography>
+          <div className="flex items-center gap-2">
+            <Button>Connexion</Button>
+            <Button variant="secondary">Rejoindre</Button>
+          </div>
         </div>
       </Container>
     </div>
