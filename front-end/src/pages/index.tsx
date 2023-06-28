@@ -1,5 +1,6 @@
 //COMPONENTS
 import { Container } from "@/ui/component/container/Container";
+import { Footer } from "@/ui/component/navigation/Footer";
 import { Navigation } from "@/ui/component/navigation/Navigation";
 import { Seo } from "@/ui/component/seo/Seo";
 
@@ -19,6 +20,7 @@ export default function DesignSystem() {
       <Seo title="Coders Monkeys" description="description" />
       {/* <Layout> */}
       <Navigation />
+      <Footer />
       {/* </Layout> */}
     </>
   );
