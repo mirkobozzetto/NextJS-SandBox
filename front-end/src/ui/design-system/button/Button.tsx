@@ -73,7 +73,7 @@ export const Button = ({
         variant === "ico"
           ? "flex items-center justify-center w-[50px] h-[50px]"
           : "px-[18px] py-[15px]"
-      }  `;
+      } `;
       icoSize = 20;
       break;
     case "large":
@@ -81,7 +81,7 @@ export const Button = ({
         variant === "ico"
           ? "flex items-center justify-center w-[60px] h-[60px]"
           : "px-[22px] py-[18px]"
-      }  `;
+      } `;
       icoSize = 24;
       break;
   }
