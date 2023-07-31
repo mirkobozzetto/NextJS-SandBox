@@ -14,6 +14,7 @@ export const Navigation = ({}: Props) => {
   return (
     <div className="border-b-2 border-gray-400">
       <Container className="flex items-center justify-between py-1.5">
+      <ActiveLink href="/">
         <div className="flex items-center gap-2.5">
           <Logo size="small" />
           <div className="flex flex-col">
@@ -25,6 +26,7 @@ export const Navigation = ({}: Props) => {
             </Typography>
           </div>
         </div>
+        </ActiveLink>
         <div className="flex items-center gap-7">
           <Typography variant="caption3" component="div" className="">
             <ActiveLink href="/design-system">Design System</ActiveLink>

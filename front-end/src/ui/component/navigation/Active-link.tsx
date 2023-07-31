@@ -15,8 +15,8 @@ export const ActiveLink = ({ href, children }: Props) => {
     return router.pathname === href;
   }, [router.pathname, href]);
 
-  console.log("router :: ", router);
-  console.log("href :: ", href);
+  // console.log("router :: ", router);
+  // console.log("href :: ", href);
 
   return (
     <Link href={href} className={clsx(isActive && "text-primary font-medium")}>
